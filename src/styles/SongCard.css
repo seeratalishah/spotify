@@ -1,0 +1,27 @@
+.song-card{
+    background-color: var(--lighter-bg-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.song-card img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.song-card h5{
+    font-size: 1.1rem;
+    margin: 0.9rem 0;
+}
+
+.song-card .singers a{
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+.song-card .singers a:hover{
+    color: var(--primary-text);
+    text-decoration: underline;
+}

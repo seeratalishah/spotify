@@ -3,8 +3,22 @@
     overflow-y: scroll;
     background-color: var(--secondary-color);
     color: var(--primary-text);
+    padding: 2rem;
 }
 
-.home h1{
-    font-size: 1.9rem;
+.home h2{
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+}
+
+.home .playlist-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.home .song-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
 }

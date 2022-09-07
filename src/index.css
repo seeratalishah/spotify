@@ -22,10 +22,14 @@ a{
 @import './styles/Navbar.css';
 @import './styles/SpotifyLayout.css';
 @import './styles/Home.css';
+@import './styles/Card.css';
+@import './styles/SongCard.css';
 
 :root{
   --primary-color: #000000;
   --secondary-color: #121212;
+  --light-bg-color: #373636;
+  --lighter-bg-color: #1a1919;
   --primary-blue-color: #2B2B38;
   --secondary-blue-color: #13131A;
   --primary-text: #FFFFFF;
