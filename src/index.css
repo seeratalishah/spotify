@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+@import './styles/Logo.css';
+@import './styles/SideBar.css';
+@import './styles/Navbar.css';
+@import './styles/SpotifyLayout.css';
+
+:root{
+  --primary-color: #000000;
+  --secondary-color: #121212;
+  --primary-blue-color: #2B2B38;
+  --secondary-blue-color: #13131A;
+  --primary-text: #FFFFFF;
+  --secondary-text: #BCBCBE;
+  --green-color: #1FDF64;
+}
