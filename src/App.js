@@ -1,4 +1,4 @@
-import SideBar from './components/SideBar';
+
 import {Routes, Route} from 'react-router-dom';
 import SpotifyLayout from './components/SpotifyLayout';
 import Home from './components/Home';
