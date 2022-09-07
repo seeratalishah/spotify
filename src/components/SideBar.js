@@ -1,63 +1,56 @@
 import React from "react";
-import Logo from "./Logo";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import Logo from './Logo';
 
 function SideBar() {
+  const location =useLocation();
+  console.log(location);
+// location.pathname === /dashboard
+
   return (
-    <div className="side-bar">
-      <Logo />
-      <div className="sidebar-items-container">
-        <ul className="items-container">
-          <li className="item">
-            <NavLink>
-              <span class="material-icons-outlined">home</span>
-              <span className="text">home</span>
-            </NavLink>
-          </li>
-          <li className="item">
-            <NavLink>
-              <span class="material-icons-outlined">search</span>
-              <span className="text">Search</span>
-            </NavLink>
-          </li>
-          <li className="item">
-            <NavLink>
-              {" "}
-              +<span class="material-icons-outlined">bookmarks</span>
-              <span className="text">home</span>
-            </NavLink>
-          </li>
-        </ul>
+    <aside>
+     <Logo className='logo-space' />
 
-        <ul className="items-container icon">
-          <li className="item">
-            <NavLink>
-              <div className="div">
-                <span class="material-icons-outlined">add</span>
-              </div>
-              <span className="text">home</span>
-            </NavLink>
-          </li>
-          <li className="item">
-            <NavLink>
-              <div className="div">
-                <span class="material-icons-outlined">favorite</span>
-              </div>
-              <span className="text">Search</span>
-            </NavLink>
-          </li>
-        </ul>
-      </div>
+     <div className="menus">
+     <ul className="sidebar-links">
+        <li>
+          <NavLink to="/" className={({isActive})=> location.pathname === '/'? 'active' : '' } >
+            <span className="material-icons-outlined">home</span>
+            <span className="link-text">Home</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/spotifylayout/search">
+            <span className="material-icons-outlined">search</span>
+            <span className="link-text">Search</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/spotifylayout/library">
+            <span className="material-icons-outlined">bookmarks</span>
+            <span className="link-text"> Products</span>
+          </NavLink>
+        </li>
+      </ul>
 
-      <hr />
+      <ul className="sidebar-links">
+        <li>
+          <NavLink to="/spotifylayout/playlist">
+            <span className="material-icons-outlined">add</span>
+            <span className="link-text">Create Playlist</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/spotifylayout/favorite">
+            <span className="material-icons-outlined">favorite</span>
+            <span className="link-text">Liked Songs</span>
+          </NavLink>
+        </li>
+      </ul>
+     </div>
 
-      <div className="album-list">
-        <ul>
-          <li>Morning Songs</li>
-          <li>Traveling Songs</li>
-        </ul>
-      </div>
-    </div>
+    
+    </aside>
   );
 }
 

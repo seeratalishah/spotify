@@ -1,7 +1,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    width: calc(100vw - 307px);
+    width: calc(100vw - 230.4px);
     padding: 1rem 1rem;
     background-color: var(--secondary-blue-color);
     color: var(--secondary-text);
@@ -13,6 +13,14 @@ nav .navbar-menu{
     align-items: center;
 }
 
+nav .navbar-menu button{
+    background: transparent;
+    border: 1px solid var(--secondary-text);
+    color: var(--primary-text);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
 nav .navbar-menu .user{
     display: flex;
     gap: 1rem;
@@ -22,9 +30,13 @@ nav .navbar-menu .user{
 
 }
 
+nav .navbar-menu .user .user-icon{
+    color: var(--primary-text);  
+}
+
 nav .navbar-menu .user select{
     background-color: var(--primary-color);
-    color: var(--secondary-text);
+    color: var(--primary-text);
     border: none;
     font-size: 1rem;
 }

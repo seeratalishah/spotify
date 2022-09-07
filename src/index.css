@@ -21,6 +21,7 @@ a{
 @import './styles/SideBar.css';
 @import './styles/Navbar.css';
 @import './styles/SpotifyLayout.css';
+@import './styles/Home.css';
 
 :root{
   --primary-color: #000000;

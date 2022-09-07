@@ -1,0 +1,10 @@
+.home{
+    height: calc(100vh - 72px);
+    overflow-y: scroll;
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
+}
+
+.home h1{
+    font-size: 1.9rem;
+}
