@@ -24,12 +24,13 @@ a{
 @import './styles/Home.css';
 @import './styles/Card.css';
 @import './styles/SongCard.css';
-
+@import './styles/Footer.css';
 :root{
   --primary-color: #000000;
   --secondary-color: #121212;
-  --light-bg-color: #373636;
-  --lighter-bg-color: #1a1919;
+  --light-bg-color: #181818;
+  --lighter-bg-color: #2B2B2B;
+  --light-color: #8f8d8d;
   --primary-blue-color: #2B2B38;
   --secondary-blue-color: #13131A;
   --primary-text: #FFFFFF;

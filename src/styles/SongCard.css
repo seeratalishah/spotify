@@ -1,5 +1,5 @@
 .song-card{
-    background-color: var(--lighter-bg-color);
+    background-color: var(--light-bg-color);
     padding: 1rem;
     border-radius: 0.5rem;
 }

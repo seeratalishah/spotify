@@ -1,3 +1,124 @@
 .footer{
     background-color: var(--light-bg-color);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border: 1px solid var(--lighter-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: var(--primary-text);
 }
+
+
+
+.footer .song-details{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer .song-details h6{
+    font-size: 1rem;
+}
+
+.footer .song-details a{
+    color: var(--secondary-text);
+    font-size: 0.8rem;
+}
+
+.footer .song-details a:hover{
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+
+.footer .song-details img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.footer .material-icons-outlined{
+    color: var(--secondary-text);
+    cursor: pointer;
+}
+
+.footer .material-icons-outlined:hover{
+    color: var(--primary-text);
+}
+
+.footer .song-details .material-icons-outlined{
+    font-size: 1.2rem;
+}
+
+.footer .volume-controls{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.footer .volume-controls .volume-line{
+    width: 100px;
+    height: 6px;
+    border: 2px solid var(--secondary-text);
+    background-color: var(--secondary-text);
+    border-radius: 0.5rem;
+    position: relative;
+    
+}
+
+.footer .volume-controls .volume-line .active-volume-line{
+    width: 60%;
+    height: 5px;
+    border: 2px solid var(--primary-text);
+    background-color: var(--primary-text);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0;
+}
+
+.footer .song-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer .song-controls .audio-controls{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .song-controls .audio-controls .icon:hover{
+  color: var(--primary-text);
+  cursor: pointer;
+}
+
+.footer .song-controls .audio-controls .circle{
+    font-size: 2.5rem;
+    color: var(--primary-text);
+}
+
+.footer .song-controls .audio-controls .loop{
+    color: var(--light-color);
+    font-size: 1.3rem;
+}
+
+.footer .song-controls .audio-controls .next{
+    color: var(--secondary-text);
+    font-size: 1.9rem;
+}
+
+.footer .song-controls .song-timer{
+    width: 500px;
+    border: 2px solid var(--secondary-text);
+    background-color: var(--secondary-text);
+    border-radius: 3px;
+}
+
+
+
+

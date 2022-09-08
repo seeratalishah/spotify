@@ -106,6 +106,8 @@ function Home() {
           );
         })}
       </div>
+
+      <hr />
     </div>
   );
 }

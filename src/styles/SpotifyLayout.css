@@ -1,4 +1,5 @@
 .spotify-layout{
     display: flex;
+    position: relative;
 }
 

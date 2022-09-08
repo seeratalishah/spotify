@@ -21,4 +21,20 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 0.5rem;
+    
+}
+
+.home hr{
+    border: 1px solid var(--secondary-color);
+    height: 1px;
+    margin: 4rem 0;
+}
+
+
+@media  screen and(max-width: 1024px) {
+
+    .home .playlist-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }

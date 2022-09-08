@@ -49,6 +49,21 @@ function SideBar() {
       </ul>
      </div>
 
+     <hr />
+
+     <ul className="sidebar-links">
+        <li>
+          <NavLink to="/spotifylayout/playlist-1">
+            <span className="link-text">My playlist #1</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/spotifylayout/playlist-2">
+            <span className="link-text">My playlist #2</span>
+          </NavLink>
+        </li>
+      </ul>
+
     
     </aside>
   );

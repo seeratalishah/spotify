@@ -13,7 +13,6 @@ aside .menus{
     margin-top: 2rem;
 }
 
-
 aside ul li{
     margin-bottom: 0.6rem;
     
@@ -38,4 +37,10 @@ aside .link-text{
 
 aside .active, aside a:hover{
     color: var(--primary-text);
+}
+
+aside hr{
+    border: 1px solid var(--secondary-text);
+    height: 1px;
+    margin: 0.5rem 0 1rem 0;
 }

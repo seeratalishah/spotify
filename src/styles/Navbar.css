@@ -1,7 +1,7 @@
 nav{
     display: flex;
     justify-content: space-between;
-    width: calc(100vw - 230.4px);
+    width: 100%;
     padding: 1rem 1rem;
     background-color: var(--secondary-blue-color);
     color: var(--secondary-text);
@@ -19,6 +19,12 @@ nav .navbar-menu button{
     color: var(--primary-text);
     padding: 0.5rem 1rem;
     border-radius: 1rem;
+    transition: 0.3s all ease-out;
+}
+
+nav .navbar-menu button:hover{
+    background-color: var(--primary-color);
+    letter-spacing: 1px;
 }
 
 nav .navbar-menu .user{
